@@ -61,6 +61,39 @@ const juanito = new Student2({name: 'Juanito'})
 //Ventajas POO
 //Reutilizacion de codigo, el codigo se vuelve mas escalable.
 
+class Course{
+    constructor({name, classes = []}){
+        this.name = name
+        this.classes = classes
+    }
+}
+
+const cursoProgBasica = new Course({name: 'Curso gratis de prg basica'})
+const cursoDefHTML = new Course({name: 'Curso definitivo'})
+
+class learningPath{
+    constructor({name, courses =[]}){
+        this.name = name
+        this.courses = courses
+
+    }
+}
+
+const escuelaWeb = new learningPath({
+    name: 'Escuela de desarrollo web',
+    courses : [cursoDefHTML, cursoProgBasica]
+})
+
+const escuelaDataScience = new learningPath({
+    name: 'Escuela de DB',
+    courses : [cursoProgBasica]
+})
+
+const escuelaVgs = new learningPath({
+    name: 'Escuela de VudeiJuegis',
+    courses : [cursoDefHTML, cursoProgBasica]
+})
+
 class Student3{
     constructor({
         name,
@@ -90,12 +123,14 @@ const alejito = new Student3({
     name: 'Alejon',
     username: 'alejito34',
     email: 'alejito@correo.co',
-    twitter: 'aleTy6'
+    twitter: 'aleTy6',
+    learningPaths: [escuelaDataScience , escuelaWeb]
 })
 
 const miguelito = new Student3({
     name: 'miguel',
     username: 'miguelito34',
     email: 'miegue@correo.co',
-    twitter: 'eeemeTy6'
+    twitter: 'eeemeTy6',
+    learningPaths: [escuelaDataScience , escuelaVgs]
 })

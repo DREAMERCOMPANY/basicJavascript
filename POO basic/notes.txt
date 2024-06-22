@@ -45,4 +45,5 @@ Clases en Javascript
     -Hay un patron que se llama ROR, recibe un objeto y retorna un objeto
 
 ¿Que es abstraccion?
-    -
+    -Consiste en abstraer los datos de un objeto para crear su molde.
+    -Ayuda a reutilizar el codigo una y otra vez
