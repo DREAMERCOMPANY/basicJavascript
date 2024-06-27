@@ -47,3 +47,35 @@ Clases en Javascript
 ¿Que es abstraccion?
     -Consiste en abstraer los datos de un objeto para crear su molde.
     -Ayuda a reutilizar el codigo una y otra vez
+
+¿Que es encapsulamiento?
+    -se refiere a limitar el acceso de los atributos y propiedades
+    -Es como si tuvieramos un guardian
+    -Esconder metodos y atributos privados, solo lo que este dentro de la clase puede manipular
+    -No permitir la alteracion de metodos y atributos.
+    -En realidad no se puede esconder metodos ni atributos, lo que se puede hacer es no permitir la alteracion
+    -Maneras de aplicar encapsulamiento: Getters, setters, namespaces, Object.defineProperties, ModulosEs6
+
+¿Que es herencia?
+    - se utiliza para tener mas orden en el codigo
+
+¿Que es polimorfismo?
+    -El polimorfismo es como una herencia, algo asi como una herencia 2.0
+    -Le permite a nuestras subclases cambiar o anular el comportamiento que heredaron
+    -Tipos de polimorfismo: sobrecarga, parametrico, inclusion
+    -Se refiere a que varios objetos pueden utilizar un metodo de la clase madre pero con especificaciones diferentes
+
+POO intermedio:
+    -Entender como funcionan los closures y scopes.
+    -Entender POO en general.
+    -Entender los paradigmas de la POO(Herencia, polimorfismo, encapsulamiento, abstraccion)
+    -Entender desde adeentro como funcionan los objetos.
+    -Romper las reglas, romper js para entender como funcionan los objetos por dentro
+
+Atributos y metodos estaticos:
+    -Generalmente se debe crear una instancia del prototipo
+    -No siempre se debe hacer eso gracias a los metodos estaticos
+    -Object.keys(), Object.values(), Object.getOwnPropertyDescriptors()
+    -Vamos a jugar con el encapsulamiento
+
+Object.defineProperty():

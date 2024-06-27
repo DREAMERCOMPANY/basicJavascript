@@ -134,3 +134,7 @@ const miguelito = new Student3({
     twitter: 'eeemeTy6',
     learningPaths: [escuelaDataScience , escuelaVgs]
 })
+
+ //Encapsulamiento
+ //Getters y setters
+
