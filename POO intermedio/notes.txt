@@ -1,0 +1,17 @@
+¿Como funciona la memoria en JS?
+    -Intentar copiar objetos en JS
+    -Los objetos son referencias a un espacio en memoria
+    -Cuando se copia un objeto lo que se copia es su referencia en memoria
+    -memoria stack, se guardan los valores en la memoria
+    -Los objetos se guardan en la memoria Heap
+    -Las variables se guardan en la memoria stack
+    -La memoria Heap es mas lenta que la variable Stack
+    -Con strings, numeros los valores se guardan en la memoria Stack
+    -Hay formas de copiar objetos, con el shallow copy y con el deep copy
+
+Que es JSON.parse y JSON.stringify?
+    -Se pueden crear copias de objetos que apuntas a diferentes referencias en memoria pero no se puede trabajar con metodos.
+
+Que es recursividad?
+    -Es cuando una funcion se llama a si misma
+    
