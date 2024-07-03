@@ -14,4 +14,17 @@ Que es JSON.parse y JSON.stringify?
 
 Que es recursividad?
     -Es cuando una funcion se llama a si misma
+
+Deep copy con recursividad
+    -Uno de sus usos es para copiar objetos
+
+Factory pattern y RORO:
+    -Una funcion puede recibir un objeto y asi mismo, retorna un objeto
+    -dentro de los parametros que recibe una funcion , a los parametros se les puede asignar otra funcion que valide si el parametro existe
+
+Abstraccion con objetos literales y deep copy:
+    - Abstraccion y encapsulamiento sin prototipos
+    
+
+
     
