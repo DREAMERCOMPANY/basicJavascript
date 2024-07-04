@@ -24,6 +24,17 @@ Factory pattern y RORO:
 
 Abstraccion con objetos literales y deep copy:
     - Abstraccion y encapsulamiento sin prototipos
+
+Module Pattern y Namespaces:
+    -Javascript no es un lenguaje fuertemente tipado lo cual lo hace flexible
+    -En JS no existen metodo
+    -Con ñas factory functions se pueden crear propiedades privadas
+
+Getters y setters:
+    -Cuando utilizamos getters y setters es como si ya no tuvieramos un atributo writable y value
+
+¿Que es duck typing?:
+    -Hay que tener parametros para saber quien es quien
     
 
 

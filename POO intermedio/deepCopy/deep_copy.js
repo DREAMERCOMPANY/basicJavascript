@@ -9,6 +9,7 @@ function isArray(subject){
 function deepCopy(subject){
     const subjectIsArray = isArray(subject)
     const subjectIsObject = isObject(subject)
+    let copySubject;
 
     if(subjectIsArray ){
         copySubject = []
@@ -31,19 +32,21 @@ function deepCopy(subject){
         }
     }
     //Validad si es un objeto, si es un array si no es un objeto o un array
-    let copySubject;
+    
     return copySubject
 }
 
-const juan = {
-    name: "Juanito",
-    approvedCourses: ["Curso 1","Curso 2"],
+
+
+const studentBase = {
+    name: undefined,
+    approvedCourses: undefined,
     caracteristicas: {
-      age: 18,
-      colorCabello: 'Negro',
+      age: undefined,
+      colorCabello: undefined,
       gustos: {
-        musica: ['rock', 'punk', 'ska'],
-        peliculas: ['drama', 'horros', 'comedia'],
+        musica: undefined,
+        peliculas: undefined,
       },
     },
     addCourse(newCourse) {
@@ -52,6 +55,16 @@ const juan = {
       this.approvedCourses.push(newCourse);
     }
   };
+
+  const jhoncena = deepCopy(studentBase)
+  Object.seal(jhoncena)
+  Object.isSealed(jhoncena)
+  Object.freeze(jhoncena)
+  console.log(Object.isFrozen(jhoncena))
+  console.log(Object.getOwnPropertyDescriptors(jhoncena))
+
+
+
 
 function deepFreeze(obj) {
     if (typeof (obj) !== 'object') return
@@ -64,7 +77,7 @@ function deepFreeze(obj) {
     console.log(obj)
   }
 
-  deepFreeze(juan)
+  deepFreeze()
 
 
 
