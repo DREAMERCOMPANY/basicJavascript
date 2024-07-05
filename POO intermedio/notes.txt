@@ -35,6 +35,12 @@ Getters y setters:
 
 ¿Que es duck typing?:
     -Hay que tener parametros para saber quien es quien
+
+Instance of en Javascript con instancias y prototipos:
+    -DONE
+
+Atributos y metodos privados en JS:
+    -
     
 
 
