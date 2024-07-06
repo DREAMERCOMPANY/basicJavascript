@@ -1,0 +1,6 @@
+Manipulacion de arrays:
+    -Es mi has bajo la manga por que empezare a ser altamente productivo y a solucionar algoritmos
+    -Solucionar algoritmos complejos de una forma sencilla y con un codigo limpio
+
+For each:
+    -Sirve para hacer un recorrido por todos los elementos del array
