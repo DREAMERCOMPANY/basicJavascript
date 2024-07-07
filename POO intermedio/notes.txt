@@ -15,7 +15,10 @@ Que es JSON.parse y JSON.stringify?
 Que es recursividad?
     -Es cuando una funcion se llama a si misma
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 92be808be94b8f12a0667ad2552c98197caa44f0
 
 Deep copy con recursividad
     -Uno de sus usos es para copiar objetos
@@ -46,5 +49,8 @@ Atributos y metodos privados en JS:
     
 
 
+<<<<<<< HEAD
+>>>>>>> 92be808be94b8f12a0667ad2552c98197caa44f0
+=======
 >>>>>>> 92be808be94b8f12a0667ad2552c98197caa44f0
     

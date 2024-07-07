@@ -4,6 +4,7 @@ Manipulacion de arrays:
 
 For each:
     -Sirve para hacer un recorrido por todos los elementos del array
+<<<<<<< HEAD
 
 Mutabilidad vs Inmutabilidad:
     -cuando se copia un array este apunta a la misma referencia en memoria
@@ -20,3 +21,5 @@ Map:
 
 Filter:
     -
+=======
+>>>>>>> 92be808be94b8f12a0667ad2552c98197caa44f0
