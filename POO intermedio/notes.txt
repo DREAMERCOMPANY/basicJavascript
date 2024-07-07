@@ -14,4 +14,37 @@ Que es JSON.parse y JSON.stringify?
 
 Que es recursividad?
     -Es cuando una funcion se llama a si misma
+<<<<<<< HEAD
+=======
+
+Deep copy con recursividad
+    -Uno de sus usos es para copiar objetos
+
+Factory pattern y RORO:
+    -Una funcion puede recibir un objeto y asi mismo, retorna un objeto
+    -dentro de los parametros que recibe una funcion , a los parametros se les puede asignar otra funcion que valide si el parametro existe
+
+Abstraccion con objetos literales y deep copy:
+    - Abstraccion y encapsulamiento sin prototipos
+
+Module Pattern y Namespaces:
+    -Javascript no es un lenguaje fuertemente tipado lo cual lo hace flexible
+    -En JS no existen metodo
+    -Con ñas factory functions se pueden crear propiedades privadas
+
+Getters y setters:
+    -Cuando utilizamos getters y setters es como si ya no tuvieramos un atributo writable y value
+
+¿Que es duck typing?:
+    -Hay que tener parametros para saber quien es quien
+
+Instance of en Javascript con instancias y prototipos:
+    -DONE
+
+Atributos y metodos privados en JS:
+    -
+    
+
+
+>>>>>>> 92be808be94b8f12a0667ad2552c98197caa44f0
     

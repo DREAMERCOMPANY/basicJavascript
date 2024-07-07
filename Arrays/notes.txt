@@ -1,0 +1,22 @@
+Manipulacion de arrays:
+    -Es mi has bajo la manga por que empezare a ser altamente productivo y a solucionar algoritmos
+    -Solucionar algoritmos complejos de una forma sencilla y con un codigo limpio
+
+For each:
+    -Sirve para hacer un recorrido por todos los elementos del array
+
+Mutabilidad vs Inmutabilidad:
+    -cuando se copia un array este apunta a la misma referencia en memoria
+    -Existe la mutabilidad que se refiere a cambiar el array original
+    -Existe la Inmutabilidad que se refiere a crear una copia igual o diferente que el array original sin afectar a este mismo
+
+Map:
+    -Lo que hace es transformar
+    -Es inmutable, NO modifica el array original
+    -Se obtiene el mismo numero de elementos
+    -con el metodo map literalmente se puede transformar el array en lo que sea
+    -Cuando se definen tanto objetos como arrays, estos apuntan a la misma referencia en memoria(Heap)
+    -Cuando se crea una copia de un objeto o un array en realidad se esta crean una copia que apunta a la misma referencia en memoria del array u objeto original.
+
+Filter:
+    -

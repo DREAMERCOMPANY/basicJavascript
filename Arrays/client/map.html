@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id="app"></div>
+</head>
+<body>
+    <script>
+        const app = document.getElementById('app')
+        const learningPaths = [
+            {course: 'Desarrollo web', classes: [1,2,3,4,5,6,7]},
+            {course: 'eeee', classes: [1,2,3,4,5,6,7]},
+            {course: 'rrrrrrrr', classes: [1,2,3,4,5,6,7]},
+            {course: 'aaaaa', classes: [1,2,3,4,5,6,7]}
+        ]
+        const renderStr = learningPaths.map(item => {
+            const classList = item.classes.map(cls => `<span>${cls}</span>`).join(', ');
+            return `<li>${item.course} - Classes: ${classList}</li>`;
+        });
+
+        app.innerHTML = renderStr.join('')
+    </script>
+    
+</body>
+</html>
