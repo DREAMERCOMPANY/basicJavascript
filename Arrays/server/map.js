@@ -47,3 +47,7 @@ const orders = [
     }
   })
   console.log({orders, rta3});
+
+  //Spread operator
+
+  

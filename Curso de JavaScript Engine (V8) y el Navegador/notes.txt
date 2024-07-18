@@ -1,0 +1,96 @@
+Historia de JS:
+    -En el 91 nace HTTP
+    -En el 92 nace HTML1
+    -Js nace casi a finales del 95
+    -Solo se podia consumir informacion
+    -Js nace por Brendan Eich
+    -Como nacen: 
+        Mocha - Livescript - Javascript - Jscript(Microsoft) - Ecma - V8-Node.js - Frameworks - Es6
+    -Ecma estandariza los lenguajes a uno solo que corra en el navegador(Javascript)
+    -Ecma marca los estandares y el lenguaje de crecimiento
+    -V8 es un engine de JS que corre en el navegador
+    -En el 2009 de crea Node.js
+    -En el 2010 nacen los primeros Frameworks de JS(React, Vue.js)
+    -Ecma se dio cuenta que tenemos que ir revolucionando el lenguaje
+    -Cada dia se ira evolucionando mas y mas el lenguaje
+    -Ecma crea los estandares de JS y decide que cambios de hace en el lenguaje
+
+¿Como funciona el Javascript Engine?
+    -Siempre corre en el navegador
+    -El motor de JS funciona como un interprete intermedio
+    -Es el interpreta el lenguaje y se lo pasa a la compu para que lo procese
+    -Este proceso se llama como GIT compiler, Just in time compiler, un compilador justo a tiempo
+    -Entonces cuando estoy escribiendo codigo JS en realidad esto es compilado por el motor de JS que actua como un intermediario entre el lenguaje y la computadora para que la maquina entienda el codigo binario . el motor de javacript entonces lo que hace es transformar ese codigo de javascript a codigo binario para que la compu logre entender y realizar las acciones.
+    -Aunque la compilacion es Just in time , JS es un lenguaje interpretado
+
+¿Que es V8?
+    -Es el motor de Javascript que corre en el navegador de Chrome
+    -V8 no es el unico motor de JS que existe, hay otros navegadores que manejan distintos motores.
+    -Cada navegador que existe tiene un motor
+    -Antes, cada navegador tenia un motor
+    -V8 se ha estado convirtiendo en el motor estandar
+    -Nace por que en ese momento Google tenia google maps, era muy lento, implementan V8 y se vuelve rapido
+    -Hay muchos motores de Js pero V8 es el mas implementado hasta el momento
+
+Engine V8:
+    -Una vez recibe el codigo , genera un entorno global que se llama window
+    -Hace un entorno global que hace: 
+        -Genera un objeto global llamado window
+        -Genera una variable llamada this
+        -Despues de generar estas dos pasa el contexto de ejecucion y corre el codigo
+        -El codigo lo corre a traves de un stack de tareas, las hace una por una
+    -Lo que el motor de JS hace con el codigo:
+        1. Parsea toda la hoja de JS
+        2. Pasa esa hoja a un arbol AST, Abstract Syntax three
+        3. Interpreta ese Arbol que genera
+        4. Luego de interpretarlo lo transforma a bytecode que es un codigo que ya logra entender la maquina
+    -En el proceso del interpreter tambien compila el codigo y sucede el Hoisting
+    -Es cuando sucede el Hoisting que hay que tener cuidado por que puede perjudicar el desarrollo
+
+Hoisting:
+    -Apenas se carga una hoja JS, se crea un objeto window y una variable this.
+    -Luego crea una variable this que hace referencia a THIS.
+    -Hoisting se encarga de subir al principio del codigo las variables y funciones
+    -Primero se deben declarar variables y funciones al inicio del codigo y al final si llamarlas para no generar errores.
+    -El interprete lee linea por linea del codigo, luego el profiler busca la manera de optimizar el codigo y luego el compilador arroja el codigo optimizado y es ahi donde se genera el Hoisting.
+
+Memoria Heap:
+    -Javascript solo puede hacer una tarea a la vez, es sincrono
+    -Memory heap es como una repisa donde se van guardando el nombre de nuestras variables
+    -Los valores no se guardan de manera linea, pero se guardan en una referencia en memoria
+
+Call stack:
+    -Nos dice como se va a comportar el codigo dentro del navegador para ejecutar las tareas.
+    -Se tiene una pila y trabaja las tareas una por una
+    -Js es sincrono
+    -En el call stack se tiene la lista de todas las tareas que se van haciendo y las que se van sacando
+    -El va leyendo el codigo y lo primero que lee es el objeto global, luego va colocando las tareas en una 'Pila' y las va ejecutando una por una, de manera sincrona.
+
+Garbage collection:
+    -limpia la memoria de los datos no utilizados para no sobrecargarla y seguir trabajando sin problemas.
+    -Una vez se estan guardando las cosas se genera un garbage collection
+    -Se hace un mark and sweep, se va eliminando cosas innecesarias
+    -Los valores pasados que ocupan un espacio y que no se utilizan se van eliminando
+    -Si hay momentos en los que se puede llevar el memory heap al limite(loop infinito)
+
+Stack overflow:
+    -La pila de tareas se puede devordar, se crashea el navegador
+    -Ocurre cuando se supera la cantidad
+    -Se generan cuando se generan ciclos infinitos o cuando una funcion se manda a llamar asi misma muchas veces - recursividad
+
+Javascript Runtime:
+    -Javascript es sincrono y hace una tarea a la vez
+    -Va haciendo una cosa a la vez , como va entrando
+    -Si hay una tarea que tarde mas tiempo la hace y sigue haciendo las demas tareas.
+    
+Asincronismo en JS:
+    -El navegador tiene por defecto muchas funciones y APIS
+    -Hay funciones propias que tiene el navegador como un setTimeOut(), cuando se utilizan estas funciones que son asincronas JS primero ejecuta lo que hay en el call stack, el navegador ejecuta lo que se le pide luego lo manda a un callback QUUEU y un loop es el que va  revisando si el call stack esta vacia, cuando el call stack esta vacio, se manda a llamar la tarea que realizo el navegador. ASI funciona JS asincrono. Por ejemplo si se pone un setTimeOut con un tiempo en 0, NO IMPORTA. Siempre se va a ejecutar despues de que JS vacie el call stack por que es algo que le corresponde a el navegador ejecutar.
+
+Que aprendimos?
+    -Que es JS Engine
+    -Como funciona el motor V8
+    -Como funciona JIT compiler
+    -Sincronia y Asincronia
+    -Stack overflow
+    

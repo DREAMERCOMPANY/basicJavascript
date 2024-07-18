@@ -1,10 +1,10 @@
 Manipulacion de arrays:
     -Es mi has bajo la manga por que empezare a ser altamente productivo y a solucionar algoritmos
     -Solucionar algoritmos complejos de una forma sencilla y con un codigo limpio
+    -Map, filter y reduce son los elementos que mas se utilizan y los que mas se deben manejar
 
 For each:
     -Sirve para hacer un recorrido por todos los elementos del array
-<<<<<<< HEAD
 
 Mutabilidad vs Inmutabilidad:
     -cuando se copia un array este apunta a la misma referencia en memoria
@@ -20,6 +20,70 @@ Map:
     -Cuando se crea una copia de un objeto o un array en realidad se esta crean una copia que apunta a la misma referencia en memoria del array u objeto original.
 
 Filter:
-    -
-=======
->>>>>>> 92be808be94b8f12a0667ad2552c98197caa44f0
+    - Se utiliza para filtrar por elementos dentro de un array que cumplen con cierta condicion
+    -Puede retornar un array con 0 elementos o con muchos elementos.
+    -Nunca va a retornar mas elementos que el array original
+
+Reduce:
+    -Coge un array y lo reduce a un solo valor, retorna un solo valor
+    -En algunos casos retorna un arreglo
+    -El primer valor es el acumulador
+    -El primer elemento debe tener un estado inicial, el acumulador
+    -El estado inicial es importante por que es el estado inicial del primer elemento
+    -El estado inicial va cambiando a medida que cambia la iteracion
+    -En conclusion reduce todo los elementos a un solo valor o expresion.
+    -Un objeto se puede considerar como un solo valor, puede ser el valor inicial de reduce
+
+Some:
+    -Dice si algunos de los elementos cumplen con la condicion, devuelve true
+    -Si alguno es vegetariano, devolveria true
+    -Date functions es una libreria que
+
+Every:
+    - Evalua que todos los elementos de un arreglo cumplan con cierta condicion
+
+Find y FindIndex:
+    -Find solo retorna un objeto que cumpla con la condicion
+    -Apenas encuentra el objeto devuelve el objeto, el primero que encuetra, devuelve directamente el objeto.
+    -Siempre va a devolver un solo elemento , el primero que hace match con la condicion
+    -El Identificador(ID) es unico y no deberia repetirse.
+    -Si find no encuentra el elemento retorna undefined
+    -Si findIndex no encuentra el elemento retorna -1
+
+Includes:
+    -Dice si un elemento esta o no dentro del array
+    -Busca dentro de todos los elementos que hay dentro del array
+    -No recibe un arrow functions
+    -Tambien sirve para strings
+    -Funciona para arrays y para strings
+
+Join:
+    -Es muy util , se utiliza para unificar todo un arreglo
+    -El opuesto de Join es split()
+
+Concat:
+    -Es un metodo que sirve para fusionar arrays
+    -Es inmutable, no modifica el array original y solo crea uno nuevo
+    -Hay que tener cuidado con los spread operators
+    -Concat si respeta si es un string
+    -Concat genera un nuevo array
+
+Flat:
+    -es como manipular arrays que tienen otros arrays por dentro(Arrays bidimensionales)
+    -Se puede aplanar un array bidimensional
+
+Flatmap:
+    -Es un metodo que ademas de aplanarlo lo transforma.
+    -A medida que va aplanando el arreglo, va haciendo la transformacion
+
+Mutable functions:
+    - Metodos mutables que modifican el arreglo original y otros que no.
+    -Slice NO modifica el arreglo origina PERO Splice SI.
+
+Sort:
+    -Es un metodo para hacer ordenamiento en los arreglos
+    -Es un metodo mutable, va a cambiar el arreglo original
+    -Muta y cambia el orden del array original
+    -Cada caracter tiene un perso en el codico ASCII
+    
+    
